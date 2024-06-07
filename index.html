@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Ticket Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="king">
+    <div class="container" id="container">
+        <h1>Train Ticket Reservation</h1>
+        <div class="form-wrapper">
+        <form id="reservationForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="route">Select Route:</label>
+            <select id="route" name="route" required>
+                <option value="">Choose a route</option>
+                <option value="route1">Route 1: Chennai to Bangalore</option>
+                <option value="route2">Route 2: Delhi to Amritsar</option>
+                <option value="route3">Route 3: Kolkata to Puri</option>
+                <option value="route4">Route 4: Agartala to Meghalaya</option>
+                <option value="route5">Route 5: Mumabi to Goa</option>
+                <option value="route6">Route 6: Chennai to Andhra Pradesh</option>
+                <option value="route7">Route 7: Delhi to Agra</option>
+                <option value="route8">Route 8: Pondicherry to Chennai</option>
+                <option value="route9">Route 9: Kerala to Vizag</option>
+                <option value="route10">Route 10: Himachal Pradesh to Haryana</option>
+                <option value="route11">Route 11: Ladakh to kolkata</option>
+            </select>
+
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Reserve Ticket</button>
+        </form>
+    </div>
+
+        <div id="reservationSummary" class="hidden">
+            <h2>Reservation Summary</h2>
+            <p id="summaryText"></p>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
